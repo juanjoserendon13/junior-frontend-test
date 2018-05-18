@@ -1,4 +1,23 @@
 .root{
     flex: 2;
-    background-color: firebrick;   
+    display: flex;
+    flex-direction: column;
+}
+.emptystate{
+    font-size: 1.5em;
+    bottom: 1em;
+    color: #999999;
+    text-align: center; 
+}
+.instruction{
+    font-size: 0.9em;
+    color:#84b71c;
+    text-align: center; 
+}
+.feedbackview{
+    margin-top: auto;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import 'normalize-css';
-
 import styles from './styles.css';
+
+// JSX that import the main componentes of the applicaton
 import Messages from './../Messages';
 import Aside from './../Aside';
 import Tools from './../Tools';

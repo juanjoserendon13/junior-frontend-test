@@ -4,7 +4,6 @@
     height: 100vh;
     flex-direction: row;
     flex-wrap: nowrap;
-    /* margin: 2vw 5vw 2vw 1vw; */
     background-color: #f8f9fd;
 }
 
@@ -15,8 +14,10 @@
     flex-direction: column;
 }
 .contentview{
-    background-color: grey;
+    background-color: #fff;
      flex: 1;
      display: flex;
      flex-direction: row;
+     border-radius: 0.2em;
+     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1),0 1px 5px 0 rgba(0,0,0,0.1);
 }

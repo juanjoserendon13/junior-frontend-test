@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './styles.css';
 import Msg from './../Msg';
-
+// This is the class that process and fetch the data in the inbox
 class Messages extends Component {
   constructor() {
     super();
@@ -14,8 +14,8 @@ class Messages extends Component {
     const data = {
       inbox: [{
         id: 1,
-        subject: 'Im opting',
-        messageText: 'Some text',
+        subject: 'This is a title',
+        messageText: 'Some text Demasiado textoSome text Demasiado textoSome text Demasiado textoSome text Demasiado textoSome text Demasiado textoSome text Demasiado textoSome text Demasiado texto',
         createdAt: '2018-05-16',
         userId: 1,
       }],
@@ -36,10 +36,11 @@ class Messages extends Component {
 
     return (
       <div className={styles.root}>
+        {/* Section that manages the sort  of the messages */}
         <div className={styles.btntop}>
 
           <div className={styles.container}>
-            <div className={styles.checkcont}><input type="radio" id="radioButton" className={styles.checkbutton} /><b>Titulo</b></div>
+            <div className={styles.checkcont}><input type="radio" id="radioButton" className={styles.checkbutton} /><b>Todos</b></div>
 
             <div className={styles.btninfo}>
               <span className={styles.textbtninfo}>Ver todos</span>
@@ -48,11 +49,15 @@ class Messages extends Component {
 
           </div>
         </div>
-
+        {/* Container handling the messages availables */}
         <div className={styles.containerMsgs}>
-          <Msg />
+          <Msg
+            title={data.inbox && data.inbox[0].subject}
+            sendby={data.users && data.users[0].fullname}
+            content={data.inbox && data.inbox[0].messageText}
+            date={data.inbox && data.inbox[0].createdAt}
+          />
         </div>
-
       </div>
     );
   }
