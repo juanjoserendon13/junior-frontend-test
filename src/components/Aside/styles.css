@@ -1,0 +1,69 @@
+.root{
+    display: flex;
+    flex-direction:column; 
+    margin-top: 2em;
+    margin-left: 1em;
+    flex: 1;
+}
+
+.btninfo{
+    cursor: pointer;
+    background-color: #fff;
+    /* height: 1em; */
+    padding: 0.5em;
+    margin-bottom: 1em;
+    color: #999999;
+    display: flex;
+    justify-content: space-between;
+  }
+.textbtninfo{
+    align-self: center;
+    text-align: center;
+}
+.btninfo i{
+    align-self: flex-end;
+    align-self: center;
+    text-align: center;
+}
+.btnnew{ 
+    background-color:#84b71c;
+    margin-bottom: 1em;
+    border: none;
+    text-align: center;
+    color: #fff;
+    border-radius: 0.2em;
+    padding: 0.8em 1em 0.8em 1em;
+    font-size: 0.9em;
+}
+.contmessagetype{
+    /* height: 100px; */
+    border-bottom: 0.1em solid #e2e2e2;
+}
+.typemessage{
+    font-size: 0.9em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #adaeac;
+}
+.typemessage > li{
+    padding: 0.5em; 
+    margin-bottom: 0.4em;
+    font-weight: 400;
+    
+}
+.typemessage > li > a {
+    text-decoration: none;
+    padding-left: 0.4em;
+    color: #adaeac;
+}
+ 
+:target{
+    border-left: 2px solid #b1db44;
+    color: #b1db44;
+    
+}
+

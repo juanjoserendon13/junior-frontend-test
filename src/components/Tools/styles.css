@@ -1,0 +1,57 @@
+.root{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+input[type=text]{
+  width:100%;
+  border:1px solid #aaa;
+  border-radius:4px;
+  outline:none;
+  padding: 0.5em;
+  box-sizing:border-box;
+  transition:.3s;
+  font-size: 0.9em;
+}
+.inputWithIcon input[type=text]{
+  
+  text-align: center;
+}
+.inputWithIcon{
+  position:relative;
+  flex:2;
+}
+
+.inputWithIcon i{
+  position:absolute;
+  right:0;
+  padding:9px 8px;
+  color:#84b71c;
+  transition:.3s;
+}
+.feedback{
+  margin-left: 1em;
+  padding: 0;
+  display: flex;
+  flex:4;
+  align-items: center;
+  justify-content: space-between;
+  }
+  .textfeedback{
+    color: #999999;
+    margin-right: 0.2em;
+  }
+  .pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .textpage{
+    color: #999999; 
+  }
+  .arrowpage{
+    margin-left: 0.5em;
+    padding: 0.5em;
+  }

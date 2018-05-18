@@ -5,8 +5,6 @@ const {
     resolve
 } = require('path')
 
-const cssModules = 'modules&importLoaders=1&localIdentName=[name]__[local]__[hash:base64:5]'
-
 module.exports = {
     resolve: {
         extensions: ['.js', '.jsx']

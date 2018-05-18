@@ -1,5 +1,17 @@
 .root{
-    width: 200px;
-    height: 200px;
-    background-color: grey;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* margin: 2vw 5vw 2vw 1vw; */
+    background-color: #f8f9fd;
+}
+
+.card {
+    margin: 2em 3em 2em 1em;
+    flex:6;
+    /* background-color: grey; */
+    display: flex;
+    flex-direction: column;
 }
