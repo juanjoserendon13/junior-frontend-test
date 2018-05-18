@@ -1,0 +1,22 @@
+.root{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+.checkbutton{
+    /* margin-right: 0.5em; */
+    margin: 0.5em 0.4em;
+}
+.infoncontent{
+    font-size: 0.9em;
+    color: #6d6d6d;
+    padding: 0.5em 0.4em;
+    display: flex;
+    flex-direction: column;
+   
+}  
+.headermsg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
