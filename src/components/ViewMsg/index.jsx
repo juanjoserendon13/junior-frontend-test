@@ -29,7 +29,7 @@ class ViewMsg extends Component {
       <div className={styles.infoncontent}>
         <div className={styles.headermsg}>
           <span className={styles.title}>Titulo</span>
-          <span className={styles.date}>Fecha</span>
+          <span className={styles.date}>2018-05-18</span>
         </div>
         <span className={styles.sendby}>Jhon Doe</span>
         <span className={styles.contentmsg}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at ligula risus. Nullam sem leo, posuere id turpis quis, mollis venenatis sem. Morbi tellus orci, tincidunt id leo ac, fermentum vehicula ligula. Vestibulum nec sagittis nibh, eu vestibulum dolor. Vivamus finibus maximus feugiat. Donec mattis in tortor nec pulvinar. In gravida tellus vitae pellentesque lobortis. Ut tincidunt sapien at maximus varius. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut non urna tortor. Nullam efficitur mattis ultrices.</span>
@@ -50,7 +50,8 @@ class ViewMsg extends Component {
   render() {
     const display = this.state.display;
     return (
-      <div className={styles.root} >
+
+      <div className={styles.root} onClick={this.handleViewIn}>
         {/* Conditional rendering that display elements depending of the boolena */}
         {this.state.display ? this.detailMessage() : this.feedBackMessage()}
       </div>
