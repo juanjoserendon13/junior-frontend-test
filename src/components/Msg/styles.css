@@ -15,13 +15,13 @@
     padding: 0.4em 1em 0.4em 0.4em;
     display: flex;
     flex-direction: column;
-   flex: 1;
+    flex: 1;   
 }  
 .headermsg{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 0.2em;
+       
 }
 .date, .contentmsg{
     font-size: 0.9em;
@@ -30,6 +30,12 @@
 .contentmsg{
 text-align: start; 
 overflow: hidden; 
+}
+.bodymsg{
+    margin-top: 0.2em;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
 }
 .sendby{
     margin-bottom: 0.2em;

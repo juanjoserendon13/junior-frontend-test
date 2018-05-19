@@ -22,9 +22,12 @@ const Msg = props => (
         <span className={styles.title}>{props.title}</span>
         <span className={styles.date}>{props.date}</span>
       </div>
-      <span className={styles.sendby}>{props.sendby}</span>
-      <span className={styles.contentmsg}>{props.content}</span>
+      <div className={styles.bodymsg}>
+        <span className={styles.sendby}>{props.sendby}</span>
+        <span className={styles.contentmsg}>{props.content}</span>
+      </div>
     </div>
+
   </div>
 );
 

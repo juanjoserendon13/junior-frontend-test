@@ -15,7 +15,7 @@ class Messages extends Component {
       inbox: [{
         id: 1,
         subject: 'This is a title',
-        messageText: 'Some text Demasiado textoSome text Demasiado textoSome text Demasiado textoSome text Demasiado textoSome text Demasiado textoSome text Demasiado textoSome text Demasiado texto',
+        messageText: 'Some text Demasiado textoSome text Demasiado textoSome text Demasiado ',
         createdAt: '2018-05-16',
         userId: 1,
       },
@@ -34,14 +34,14 @@ class Messages extends Component {
         userId: 1,
       },
       {
-        id: 5,
+        id: 4,
         subject: 'This another title',
         messageText: 'Another text, testing the map',
         createdAt: '2018-05-18',
         userId: 1,
       },
       {
-        id: 2,
+        id: 5,
         subject: 'This another title',
         messageText: 'Another text, testing the map',
         createdAt: '2018-05-18',
@@ -87,7 +87,7 @@ class Messages extends Component {
             <Msg
               key={msg.id}
               title={msg.subject}
-              sendby={msg.fullname}
+              sendby={data.users[0].fullname}
               content={msg.messageText}
               date={msg.createdAt}
             />
