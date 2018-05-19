@@ -18,7 +18,15 @@ class Messages extends Component {
         messageText: 'Some text Demasiado textoSome text Demasiado textoSome text Demasiado textoSome text Demasiado textoSome text Demasiado textoSome text Demasiado textoSome text Demasiado texto',
         createdAt: '2018-05-16',
         userId: 1,
-      }],
+      },
+      {
+        id: 2,
+        subject: 'This another title',
+        messageText: 'Another text, testing the map',
+        createdAt: '2018-05-18',
+        userId: 1,
+      },
+      ],
       outbox: [],
       archived: [],
       users: [{
@@ -51,6 +59,18 @@ class Messages extends Component {
         </div>
         {/* Container handling the messages availables */}
         <div className={styles.containerMsgs}>
+          {/* ISSUE with the map that render the messages depending of the data fetched */}
+
+          {/* data.inbox && this.state.data.inbox.map(msg => (
+            <Msg
+              title={data.inbox && msg.subject}
+              sendby={data.users && data.users[0].fullname}
+              content={data.inbox && msg.inbox[0].messageText}
+              date={data.inbox && msg.inbox[0].createdAt}
+            />
+          )) */}
+
+
           <Msg
             title={data.inbox && data.inbox[0].subject}
             sendby={data.users && data.users[0].fullname}

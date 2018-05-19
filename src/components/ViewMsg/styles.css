@@ -21,3 +21,32 @@
     flex-direction: column;
     align-items: center;
 }
+.infoncontent{
+    font-size: 0.9em;
+    color: #6d6d6d;
+    padding: 1em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+}  
+.headermsg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.2em;
+}
+.date{
+    font-size: 1em;
+    color: #d4d4d4;
+}
+.title{
+    font-size: 1.5em;
+}
+.contentmsg{
+    font-size: 1.1em;
+text-align: start; 
+overflow: hidden; 
+}
+.sendby{
+    margin-bottom: 0.2em;
+    font-size: 1em;
+}
